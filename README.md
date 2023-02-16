@@ -1,4 +1,4 @@
-# projeto-blackjack
+# Projeto-blackjack
 É um jogo semelhante ao Blackjack (também conhecido como ["21"](https://pt.wikipedia.org/wiki/Blackjack)).  
 
 
