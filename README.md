@@ -32,7 +32,7 @@ O enunciado completo está no Sistema de Estudante, na sessão de Projetos https
 
 - [ ] Se o usuário recusar iniciar uma nova rodada, o programa deve imprimir uma mensagem informando o fim do jogo	
 
-- [ ] Se o usuário aceitar iniciar uma nova rodada, o programa deve exibir as carta do jogador e do computador
+- [ ] Se o usuário aceitar iniciar uma nova rodada, o programa deve exibir as cartas do jogador e do computador
 
 - [ ] Ao final do jogo, o programa deve imprimir o resultado informando quem ganhou	
 
