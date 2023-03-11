@@ -32,7 +32,7 @@ if(inicioRodada){
    } else if(somaUsuario1 > somaComp1){
       console.log("O Usuário Ganhouu!!!")
    } else if(somaUsuario1 < somaComp1) {
-      console.log("O Computador Ganhouu!!! Já era as máquinas vão dominar o mundo :o")
+      console.log("O Computador Ganhouu!!! Já era! as máquinas vão dominar o mundo =o")
    } else if(somaUsuario1 === somaComp1){
       console.log("Empatouu!!!")
    }
