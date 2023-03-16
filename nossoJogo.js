@@ -10,3 +10,38 @@
  * 
  * 
  */
+
+console.log(`Boas vindas ao jogo de BlackJack!`);
+
+let iniciarJogo = confirm("Quer iniciar uma nova rodada?");
+
+function jogoBrackJack() {
+  if (iniciarJogo) {
+    let usuarioCarta1 = comprarCarta();
+    let usuarioCarta2 = comprarCarta();
+    let computarCarta1 = comprarCarta();
+    let computarCarta2 = comprarCarta();
+
+    let usuarioPontuacao = usuarioCarta1.valor + usuarioCarta2.valor;
+    let computadorPontuacao = computarCarta1.valor + computarCarta2.valor;
+
+    console.log(
+      `Usuário - cartas: ${usuarioCarta1.texto} ${usuarioCarta2.texto} - pontuação ${usuarioPontuacao}`
+    );
+    console.log(
+      `Computador - cartas: ${computarCarta1.texto} ${computarCarta2.texto} - pontuação ${computadorPontuacao}`
+    );
+
+    if (usuarioPontuacao > computadorPontuacao) {
+      console.log(`O usuário ganhou!`);
+    } else if (computadorPontuacao > usuarioPontuacao) {
+      console.log(`O computador ganhou!`);
+    } else if (usuarioPontuacao === computadorPontuacao) {
+      console.log(`Empate!`);
+    }
+  } else {
+    console.log(`O jogo acabou`);
+  }
+}
+
+jogoBrackJack();
