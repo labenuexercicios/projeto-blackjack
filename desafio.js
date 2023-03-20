@@ -18,8 +18,6 @@ Quer iniciar uma nova rodada?`);
   let jogador = [];
   let computador = [];
 
-  //JOGADOR/COMPUTADOR COMPRANDO AS CARTAS
-
   if (novaRodada) {
     let darCartas = false;
 
@@ -28,7 +26,7 @@ Quer iniciar uma nova rodada?`);
       jogador.push(comprarCarta());
       computador.push(comprarCarta());
       computador.push(comprarCarta());
-      // VERIFICAÇÃO DO AS
+
       if (
         (jogador[0].valor === 11 && jogador[1].valor === 11) ||
         (computador[0].valor === 11 && computador[1].valor === 11)
@@ -43,15 +41,9 @@ Quer iniciar uma nova rodada?`);
     computador[0].texto = `CARTA REVELADA `;
     computador[0].valor = 0;
 
-    // MOSTRANDO AS CARTAS DO JOGADOR 1 A PRIMEIRA COMPUTADOR
-
     let textoJogador = `Jogador: `;
-    //${jogador[0].texto} ${jogador[1].texto}
-    //CÓDIGO DENTRO DAS STRINGS
 
     let textoComputador = `Computador: ${computador[0].texto} `;
-    //${computador[1].texto}
-    //CÓDIGO DENTRO DAS STRINGS
 
     let valorJogador = 0;
     let valorComputador = 0;
@@ -75,7 +67,7 @@ Quer iniciar uma nova rodada?`);
       if (valorJogador > 21) {
         break;
       }
-      //${computador[0].texto}
+
       let novaCarta = confirm(`
         ${textoJogador}
         A carta revelada do computador é: 
@@ -90,9 +82,8 @@ Quer iniciar uma nova rodada?`);
         continuarComprandoCarta = false;
       }
     }
-    /////////////////////////////////////////////////////////////////////////////
 
-    while (valorComputador <= valorJogador && valorJogador <= 21) {
+    while (valorComputador < valorJogador && valorJogador <= 21) {
       let cartas = comprarCarta();
       computador.push(cartas);
       valorComputador += cartas.valor;
@@ -113,8 +104,11 @@ Quer iniciar uma nova rodada?`);
     }
 
     alert(
-      `${textoJogador}\nPontuação do jogador: ${valorJogador}
-${textoComputador}\nPontuação do computador: ${valorComputador}\n${resultado}`
+      `${textoJogador}
+Pontuação do jogador: ${valorJogador}
+${textoComputador}
+Pontuação do computador: ${valorComputador}
+${resultado}`
     );
   } else {
     alert(`O jogo acabou`);
