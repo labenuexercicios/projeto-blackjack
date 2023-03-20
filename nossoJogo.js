@@ -8,7 +8,7 @@
     console.log(carta.valor) // imprime o valor da carta (um número). Exemplo: 10 (dado que "K" vale 10)
  *  
  */
-
+// fazendo novo commit e PR
     console.log(`Boas vindas ao jogo de BlackJack!`)
 
     const pergunta = confirm(`Quer iniciar uma nova rodada?`)
