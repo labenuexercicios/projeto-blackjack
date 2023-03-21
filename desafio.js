@@ -38,12 +38,8 @@ Quer iniciar uma nova rodada?`);
       }
     }
 
-    computador[0].texto = `CARTA REVELADA `;
-    computador[0].valor = 0;
-
     let textoJogador = `Jogador: `;
-
-    let textoComputador = `Computador: ${computador[0].texto} `;
+    let textoComputador = `Computador: `;
 
     let valorJogador = 0;
     let valorComputador = 0;
@@ -54,9 +50,6 @@ Quer iniciar uma nova rodada?`);
     }
 
     for (let i = 0; i < computador.length; i++) {
-      if (i === 0) {
-        continue;
-      }
       textoComputador += computador[i].texto + " ";
       valorComputador += computador[i].valor;
     }
@@ -71,7 +64,7 @@ Quer iniciar uma nova rodada?`);
       let novaCarta = confirm(`
         ${textoJogador}
         A carta revelada do computador é: 
-        ${computador[0].texto} ${computador[1].texto}        
+        ${computador[0].texto}        
         "Deseja comprar mais uma carta?"`);
       if (novaCarta) {
         let cartas = comprarCarta();
