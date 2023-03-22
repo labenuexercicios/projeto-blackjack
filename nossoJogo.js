@@ -17,19 +17,19 @@ let iniciarJogo = confirm("Quer iniciar uma nova rodada?");
 
 function jogoBrackJack() {
   if (iniciarJogo) {
-    let usuarioCarta1 = comprarCarta();
-    let usuarioCarta2 = comprarCarta();
-    let computarCarta1 = comprarCarta();
-    let computarCarta2 = comprarCarta();
+    let primeiraCartaUsuario = comprarCarta();
+    let segundaCartaUsuario = comprarCarta();
+    let primeiraCartaComputador = comprarCarta();
+    let segundaCartaComputador = comprarCarta();
 
-    let usuarioPontuacao = usuarioCarta1.valor + usuarioCarta2.valor;
-    let computadorPontuacao = computarCarta1.valor + computarCarta2.valor;
+    let usuarioPontuacao = primeiraCartaUsuario.valor + segundaCartaUsuario.valor;
+    let computadorPontuacao = primeiraCartaComputador.valor + segundaCartaComputador.valor;
 
     console.log(
-      `Usuário - cartas: ${usuarioCarta1.texto} ${usuarioCarta2.texto} - pontuação ${usuarioPontuacao}`
+      `Usuário - cartas: ${primeiraCartaUsuario.texto} ${segundaCartaUsuario.texto} - pontuação ${usuarioPontuacao}`
     );
     console.log(
-      `Computador - cartas: ${computarCarta1.texto} ${computarCarta2.texto} - pontuação ${computadorPontuacao}`
+      `Computador - cartas: ${primeiraCartaComputador.texto} ${segundaCartaComputador.texto} - pontuação ${computadorPontuacao}`
     );
 
     if (usuarioPontuacao > computadorPontuacao) {
