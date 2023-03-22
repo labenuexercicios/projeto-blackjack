@@ -63,8 +63,7 @@ Quer iniciar uma nova rodada?`);
 
       let novaCarta = confirm(`
         ${textoJogador}
-        A carta revelada do computador é: 
-        ${computador[0].texto}        
+        A carta revelada do computador é: ${computador[0].texto}        
         "Deseja comprar mais uma carta?"`);
       if (novaCarta) {
         let cartas = comprarCarta();
@@ -97,11 +96,7 @@ Quer iniciar uma nova rodada?`);
     }
 
     alert(
-      `${textoJogador}
-Pontuação do jogador: ${valorJogador}
-${textoComputador}
-Pontuação do computador: ${valorComputador}
-${resultado}`
+      `${textoJogador}\nPontuação do jogador: ${valorJogador}pontos\n${textoComputador}\nPontuação do computador:${valorComputador} pontos\n${resultado}`
     );
   } else {
     alert(`O jogo acabou`);
