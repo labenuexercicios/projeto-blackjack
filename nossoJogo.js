@@ -26,7 +26,7 @@
 
 
       console.log(`Usuário - cartas :${primeiraCartaUsuario.texto} + ${segundaCartaUsuario.texto} - ${pontuaçaoUsuario}`)
-      console.log(`Computador - cartas :${segundaCartaComputador.texto} + ${segundaCartaComputador.texto} - ${pontuaçaoComputador}`)
+      console.log(`Computador - cartas :${primeiraCartaComputador.texto} + ${segundaCartaComputador.texto} - ${pontuaçaoComputador}`)
       
       if(pontuaçaoUsuario > pontuaçaoComputador){
          console.log("O usuário ganhou !")
