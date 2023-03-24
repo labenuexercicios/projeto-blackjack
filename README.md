@@ -48,19 +48,21 @@ O enunciado completo está no Sistema de Estudante, na sessão de Projetos https
 
 
 
-### Instruções de entrega
 
-- Faça o fork desse repositório e realize o clone da sua cópia `seu-nome-de-usuario/projeto-blackjack`.
+### Instruções para preparar o seu repositório
+
+- Faça o fork desse repositório e realize o clone da sua cópia `seu-nome-de-usuario/projeto-lista-intro-javascript`.
    <details>
    <summary>Quer uma dica?</summary>
    <img src="https://firebasestorage.googleapis.com/v0/b/assets-conteudo.appspot.com/o/gerais%2Ffork.png?alt=media&token=7030e997-246a-41fe-a75f-2a2ced61e54d" alt="Como adicionar o projeto no repositório"/>
    </details>
 - Crie os arquivos do projeto dentro deste repo;
-- Execute o fluxo de entrega do git. **Lembre-se de abrir os PRs para seu próprio repositório.**
+- **Lembre-se de abrir os PRs para seu próprio repositório.**
 - Para isso, você precisará fazer o projeto utilizando **branches**. Não faça as alterações direto na branch ```main```!
-    <details>
-       <summary>Dúvidas sobre o Git & Github?</summary>
-       <p>Adicionamos um vídeo explicando o <strong>processo de entrega</strong> [do fork ao pull request] no Material Assíncrono da Aula de <a href="https://estudante.labenu.com.br/conteudos/tecnico/mod1/Git%20e%20Github">Git e Github</a>. Esse vídeo também exemplifica situações que podem acontecer durante o fluxo de utilização do Git.</p>
-    </details>
-- Entregue o **link do repo** no [Formulário de entrega](https://forms.gle/GLrYczpdrwiirQWg7).
+
+### Instruções de entrega
+
+![image](https://user-images.githubusercontent.com/71137294/227530610-a9172cf5-a346-49ec-ac76-e95b207f97b4.png)
+1.  Abra um novo Pull Request (PR) com a frase **PR para correção**. Caso não saiba como fazê-lo, assista a esse [vídeo](https://www.canva.com/design/DAFY4nS5W2c/t92uFMR61YtmA7bCwj2S1Q/watch).
+2.  Entregue o **link do PR** no [Formulário de entrega](https://forms.gle/GLrYczpdrwiirQWg7).
 
