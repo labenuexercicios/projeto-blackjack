@@ -12,7 +12,7 @@
  */
     //O usuário deve encontrar uma mensagem 
     //de boas vindas no console ao abrir o programa
- 
+    /*
     console.log("Boas vindas ao jogo de BlackJack!")
     
     //O usuário deve ser questionado se deseja iniciar 
@@ -46,3 +46,4 @@
       }else{
          console.log ("O jogo acabou.")
       }
+      */
