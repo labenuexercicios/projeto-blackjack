@@ -10,3 +10,27 @@
  * 
  * 
  */
+
+   //  const carta = comprarCarta();
+   //  console.log(carta.texto) 
+   //  console.log(carta.valor) 
+
+   console.log("Bem-vindo(a) ao jogo de blackjack");
+
+   const startRound = confirm("Quer iniciar uma nova rodada?");
+
+   if(startRound === true) { 
+      
+
+    } else { 
+      console.log("O jogo acabou"); 
+    } 
+
+
+      // comprarCarta();
+      // comprarCarta();
+      // comprarCarta();
+      // comprarCarta();
+      // console.log("Usuário - cartas: Q♣️ 10♣️ - pontuação 20" );
+      // console.log("Computador - cartas: Q♣️ 10♣️ - pontuação 20");
+    
