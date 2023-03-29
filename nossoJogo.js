@@ -18,10 +18,21 @@
    console.log("Bem-vindo(a) ao jogo de blackjack");
 
    const startRound = confirm("Quer iniciar uma nova rodada?");
+   const card1 = comprarCarta();
+   const card2 = comprarCarta();
+   const card3 = comprarCarta();
+   const card4 = comprarCarta();
+
+   const user = "Usuário";
+   const machine = "Computador";
+
+   function launchGame (card1,card2,player){
+    console.log(`${player} - cartas: ${card1.texto} ${card2.texto} - pontuação: ${card1.valor + card2.valor}`);
+   }
 
    if(startRound === true) { 
-      
-
+      launchGame(card1,card2,user)
+      launchGame(card3,card4,machine)
     } else { 
       console.log("O jogo acabou"); 
     } 
