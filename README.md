@@ -66,3 +66,14 @@ O enunciado completo está no Sistema de Estudante, na sessão de Projetos https
 1.  Abra um novo Pull Request (PR) com a frase **PR para correção**. Caso não saiba como fazê-lo, assista a esse [vídeo](https://www.canva.com/design/DAFY4nS5W2c/t92uFMR61YtmA7bCwj2S1Q/watch).
 2.  Entregue o **link do PR** no [Formulário de entrega](https://forms.gle/GLrYczpdrwiirQWg7).
 
+ <!-- if (confirm(`Suas cartas são ${maoUser}. A carta revelada do computador é ${cartasPC[0].texto}.\nDeseja comprar mais uma carta?`)) {
+        cartasUser.push(comprarCarta())
+        lerMaoUser()
+        calcularPontos()
+    }else{
+        while (pontuacaoPC < pontuacaoUser) {
+            cartasPC.push(comprarCarta())
+            lerMaoPC()
+            calcularPontos()
+        }
+    } -->
