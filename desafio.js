@@ -52,11 +52,15 @@ if (novoJogo === false) {
 
    //2 - Após o sorteio das 2 cartas para cada jogador, as duas primeiras cartas do usuário continuam sendo reveladas. A primeira carta do computador é revelada, a segunda é oculta por enquanto. Você deve perguntar ao usuário se ele deseja comprar mais uma carta.
    
-   for (let i = 0; i < cartasJogador.length; i++) {
-      cartasJogador  = cartasJogador[i].texto
+console.log(cartasJogador)
+
+let cartasJogadore = []
+
+   for (var i = 0; i <= cartasJogadore.length; i++) {
+      cartasJogador  = cartasJogadore[1].texto
    }
    
-   let resultado = confirm(`Suas cartas são: ${cartasJogador}. a carta revelada do computador é ${cartasComputador[0].texto}. \nDeseja comprar mais uma carta?`)
+   let resultado = confirm(`Suas cartas são: ${cartasJogadore}. a carta revelada do computador é ${cartasComputador[0].texto}. \nDeseja comprar mais uma carta?`)
 
    
 
