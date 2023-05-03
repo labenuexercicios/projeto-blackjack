@@ -8,7 +8,7 @@ Os problemas lógicos deste projeto se baseiam em 3 conteúdos principais:
 * Loops
 
 # Enunciado
-O objetivo deste projeto é criar um jogo BlackJack utilizando Javascript. O projeto é dividido em duas etapas: A primeira, chamada de "Nosso Jogo", refere-se a uma [versão reduzida e mais simples do Blackjack](http://different-alley.surge.sh/). A segunda, chamada de "Desafio", pretende aproximar o nosso [projeto do jogo original](http://unbiased-desire.surge.sh/).
+O objetivo deste projeto é criar um jogo BlackJack utilizando Javascript. O projeto é dividido em duas etapas: A primeira, chamada de "versão 1.0", refere-se a uma [versão reduzida e mais simples do Blackjack](http://different-alley.surge.sh/). A segunda, chamada de "versão 2.0", pretende aproximar o nosso [projeto do jogo original](http://unbiased-desire.surge.sh/).
 
 <details>
    <summary> 📖 Regras do jogo</summary>
