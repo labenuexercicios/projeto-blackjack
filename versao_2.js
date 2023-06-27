@@ -11,116 +11,116 @@
  * 
  */
 
-    alert `Bem-Vindo ao Blackjack !`
+   //  alert `Bem-Vindo ao Blackjack !`
 
-    const usuario = []
-    const pc = []
+   //  const usuario = []
+   //  const pc = []
     
-    if(confirm("Quer iniciar uma nova rodada?")){
+   //  if(confirm("Quer iniciar uma nova rodada?")){
     
-    let inicio = false
+   //  let inicio = false
     
-    // Cartas iniciais
-    while (inicio !== true){
+   //  // Cartas iniciais
+   //  while (inicio !== true){
     
-    //Minhas cartas
-    usuario.push(comprarCarta())
-    usuario.push(comprarCarta())
+   //  //Minhas cartas
+   //  usuario.push(comprarCarta())
+   //  usuario.push(comprarCarta())
     
-    //Cartas do pc
-    pc.push(comprarCarta())
-    pc.push(comprarCarta())
+   //  //Cartas do pc
+   //  pc.push(comprarCarta())
+   //  pc.push(comprarCarta())
           
-    if ((usuario[0].valor == 10 && usuario[1].valor == 10) || (pc[0].valor == 10 && pc[1].valor == 10)) {
+   //  if ((usuario[0].valor == 10 && usuario[1].valor == 10) || (pc[0].valor == 10 && pc[1].valor == 10)) {
           
-       }else { inicio = true } 
+   //     }else { inicio = true } 
     
-    }
+   //  }
     
-    let maisCarta = true
+   //  let maisCarta = true
     
-    //Compras de cartas do usuário
+   //  //Compras de cartas do usuário
     
-    while(maisCarta){
+   //  while(maisCarta){
        
-    let frase1 = ""
-    let ponto = 0
+   //  let frase1 = ""
+   //  let ponto = 0
              
-    for(let carta of usuario){
-       frase1 += carta.texto + ""
-       ponto += carta.valor
-    }
+   //  for(let carta of usuario){
+   //     frase1 += carta.texto + ""
+   //     ponto += carta.valor
+   //  }
     
-    let comprasDeCartas
+   //  let comprasDeCartas
     
-    if(ponto > 21){
-       maisCarta = false
+   //  if(ponto > 21){
+   //     maisCarta = false
     
-       } else {comprasDeCartas = confirm(`Suas cartas são ${frase1}.\nCarta revelada do pc é ${pc[0].texto}.\nDeseja comprar mais uma carta?`)
+   //     } else {comprasDeCartas = confirm(`Suas cartas são ${frase1}.\nCarta revelada do pc é ${pc[0].texto}.\nDeseja comprar mais uma carta?`)
           
-          if (comprasDeCartas){
-             usuario.push(comprarCarta())
+   //        if (comprasDeCartas){
+   //           usuario.push(comprarCarta())
              
-             } else {maisCarta = false}
-       }
-    }
+   //           } else {maisCarta = false}
+   //     }
+   //  }
     
-    // Compra de cartas do pc
+   //  // Compra de cartas do pc
     
-    let pontosDoUsuario = 0
-    let pontosDoPc = 0
+   //  let pontosDoUsuario = 0
+   //  let pontosDoPc = 0
     
-    let frase2 = ""
-    let frase3 = ""
+   //  let frase2 = ""
+   //  let frase3 = ""
     
     
-    if (pontosDoUsuario <= 21){
+   //  if (pontosDoUsuario <= 21){
     
-    while (pontosDoPc < pontosDoUsuario && pontosDoPc <= 21){
-       pc.push(comprarCarta())
+   //  while (pontosDoPc < pontosDoUsuario && pontosDoPc <= 21){
+   //     pc.push(comprarCarta())
        
-          pontosDoPc = 0
-          frase3 = ""
+   //        pontosDoPc = 0
+   //        frase3 = ""
     
-    for (let carta of pc){
-       pontosDoPc += carta.valor
-       frase3 += carta.texto + " "
+   //  for (let carta of pc){
+   //     pontosDoPc += carta.valor
+   //     frase3 += carta.texto + " "
           
-          }
-       }
-    }
+   //        }
+   //     }
+   //  }
     
-    // Soma dos pontos
+   //  // Soma dos pontos
       
-    for (let carta of pc){
-       pontosDoPc += carta.valor
-       frase3 += carta.texto + " "
-    }
-    for (let carta of usuario){
-       pontosDoUsuario += carta.valor
-       frase2 += carta.texto + " "
-    }
+   //  for (let carta of pc){
+   //     pontosDoPc += carta.valor
+   //     frase3 += carta.texto + " "
+   //  }
+   //  for (let carta of usuario){
+   //     pontosDoUsuario += carta.valor
+   //     frase2 += carta.texto + " "
+   //  }
     
-    // Total de pontos 
+   //  // Total de pontos 
        
-    let total = ""
+   //  let total = ""
        
-    if (pontosDoUsuario > pontosDoPc && pontosDoUsuario <= 21){
-       total = "O usuário ganhou!"
+   //  if (pontosDoUsuario > pontosDoPc && pontosDoUsuario <= 21){
+   //     total = "O usuário ganhou!"
        
-       } else if (pontosDoPc > pontosDoUsuario && pontosDoPc <= 21){
-          total = "O computador ganhou!"
+   //     } else if (pontosDoPc > pontosDoUsuario && pontosDoPc <= 21){
+   //        total = "O computador ganhou!"
        
-       } else if (pontosDoPc > 21 && pontosDoUsuario <= 21){
-       total = "O usuário ganhou!"
+   //     } else if (pontosDoPc > 21 && pontosDoUsuario <= 21){
+   //     total = "O usuário ganhou!"
        
-       } else if (pontosDoUsuario > 21 && pontosDoPc <= 21){
-       total = "O computador ganhou!"
+   //     } else if (pontosDoUsuario > 21 && pontosDoPc <= 21){
+   //     total = "O computador ganhou!"
     
-    } else {
-       total = "Empate!"
-    }
+   //  } else {
+   //     total = "Empate!"
+   //  }
     
-    alert(`Usuario - Cartas: ${frase2} - Pontuação: ${pontosDoUsuario} \n Computador - Cartas: ${frase3} - Pontuação: ${pontosDoPc} \n ${total}.`)
+   //  alert(`Usuario - Cartas: ${frase2} - Pontuação: ${pontosDoUsuario} \n Computador - Cartas: ${frase3} - Pontuação: ${pontosDoPc} \n ${total}.`)
        
-    } else { alert("O jogo acabou.") }
+   //  } else { alert("O jogo acabou.") }
