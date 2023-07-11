@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Future4 - Blackjack</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <script type="application/javascript" src="naoMexer.js"></script>
-    <script defer type="application/javascript" src="versao_1.js"></script>
-    <script defer type="application/javascript" src="versao_2.js"></script>
-  </body>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="style.css">
+  
+  
+</head>
+
+<body>
+  <header>
+    <img src="img/pngwing.com.png" width="150px" alt="">
+    <h1> Black Jack </h1> 
+    <h1 class="naipe"> </h1>
+    <img src="img/pngwing.com.png" width="150px" alt="">
+
+  </header>
+  <main class="container">
+    <section class="botoes" >
+      <button class="botao" onclick="novacarta(event)"> Comprar cartas</button>
+      <button class="botao2" onclick="pararJogo(event)"> Parar</button>
+      <button class="botao3" onclick="reiniciar(event)"> Reiniciar</button>
+    </section>
+    <section class="container1">
+      <h2 class="jogador"></h2>
+      <h2 class="cartaJ"></h2>
+      <h2 class="pontuacaoJ">
+        
+    </section>
+    <section class="container2">
+      <h2 class="computador"> Jogador Dois: Computador</h2>
+      <h2 class="cartaC"></h2>
+      <h2 class="pontuacaoC"></h2>
+    </section>
+  </main>
+  <section class="vencedor"></section>
+</body>
+
+
+
+<script src="versao_1.js" defer></script>
 </html>
