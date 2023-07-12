@@ -119,3 +119,16 @@ let jogador = []
     } else {
        alert("O jogo acabou.")
     }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
