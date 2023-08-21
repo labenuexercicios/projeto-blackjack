@@ -56,10 +56,13 @@ function comprarCarta() {
  
  // Verificar o vencedor ou empate
  if (pontuacaoUsuario === pontuacaoComputador) {
+   alert("Empatou,que pena.")
    console.log("Empate!")
  } else if (pontuacaoUsuario > pontuacaoComputador) {
+  alert("Você ganhou!")
    console.log("Você ganhou!")
  } else {
+   alert("O computador ganhou!")
    console.log("O computador ganhou!")
  }
 
