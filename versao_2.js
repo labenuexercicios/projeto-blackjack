@@ -1,7 +1,7 @@
 if (
   confirm("Boas vindas ao jogo de BlackJack!\nQuer iniciar uma nova rodada?")
 ) {
-  const numbers = ["A", 2];
+  const numbers = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"];
   const suits = ["♥️", "♣️", "♦️", "♠️"];
 
   let userSum = 0;
