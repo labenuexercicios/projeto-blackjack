@@ -32,9 +32,9 @@ O enunciado completo está no Sistema de Estudante, na sessão de Projetos https
 
 - [ x] Se o usuário recusar iniciar uma nova rodada, o programa deve imprimir uma mensagem informando o fim do jogo	
 
-- [ ] Se o usuário aceitar iniciar uma nova rodada, o programa deve exibir as cartas do jogador e do computador
+- [x ] Se o usuário aceitar iniciar uma nova rodada, o programa deve exibir as cartas do jogador e do computador
 
-- [ ] Ao final do jogo, o programa deve imprimir o resultado informando quem ganhou	
+- [ x] Ao final do jogo, o programa deve imprimir o resultado informando quem ganhou	
 
 - [ ] Implementou a verificação para impedir um par de A na primeira mão	
 
@@ -42,9 +42,9 @@ O enunciado completo está no Sistema de Estudante, na sessão de Projetos https
 
 - [ ] O usuário é questionado se deseja comprar mais cartas	
 
-- [ ] Se o usuário somar mais de 21, o mesmo perde automaticamente	
+- [x ] Se o usuário somar mais de 21, o mesmo perde automaticamente	
 
-- [ ] Se o computador somar mais de 21, o mesmo perde automaticamente	
+- [x ] Se o computador somar mais de 21, o mesmo perde automaticamente	
 
 
 
