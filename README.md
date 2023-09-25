@@ -26,11 +26,11 @@ O enunciado completo está no Sistema de Estudante, na sessão de Projetos https
 ## Lista de requisitos
 
 
-- [ ] O usuário deve encontrar uma mensagem de boas vindas no console ao abrir o programa
+- [ x] O usuário deve encontrar uma mensagem de boas vindas no console ao abrir o programa
 	
-- [ ] O usuário deve ser questionado se deseja iniciar uma nova rodada	
+- [ x] O usuário deve ser questionado se deseja iniciar uma nova rodada	
 
-- [ ] Se o usuário recusar iniciar uma nova rodada, o programa deve imprimir uma mensagem informando o fim do jogo	
+- [ x] Se o usuário recusar iniciar uma nova rodada, o programa deve imprimir uma mensagem informando o fim do jogo	
 
 - [ ] Se o usuário aceitar iniciar uma nova rodada, o programa deve exibir as cartas do jogador e do computador
 
