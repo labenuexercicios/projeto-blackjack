@@ -28,10 +28,11 @@ if (querJogar) {
    console.log(`Usuário - cartas:  ${usuario1.texto} ${usuario1.texto}  -  Pontuaçäo ${somaUsuario}`)
    console.log(`Computador - cartas:  ${computador1.texto} ${computador2.texto} - Pontuaçäo ${somaComputador}`)
 
+
    if (somaUsuario > somaComputador) {
-      console.log(" O usuário ganhou!")
+      console.log(`Usuário - cartas:  ${usuario1.texto} ${usuario1.texto}  -  Pontuaçäo ${somaUsuario} \n O usuário ganhou!`)
    } else if (somaComputador > somaUsuario) {
-      console.log("O computador ganhou!")
+      console.log(`Computador - cartas:  ${computador1.texto} ${computador2.texto} - Pontuaçäo ${somaComputador} \n O computador ganhou!`)
    } else if (somaUsuario === somaComputador) {
       console.log("Empate!")
    } else {
