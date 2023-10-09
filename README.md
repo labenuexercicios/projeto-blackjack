@@ -36,11 +36,11 @@ O enunciado completo está no Sistema de Estudante, na sessão de Projetos https
 
 - [ x] Ao final do jogo, o programa deve imprimir o resultado informando quem ganhou	
 
-- [ ] Implementou a verificação para impedir um par de A na primeira mão	
+- [x ] Implementou a verificação para impedir um par de A na primeira mão	
 
 - [ ] O jogo esconde a uma das cartas do computador ao início da rodada	
 
-- [ ] O usuário é questionado se deseja comprar mais cartas	
+- [ x] O usuário é questionado se deseja comprar mais cartas	
 
 - [x ] Se o usuário somar mais de 21, o mesmo perde automaticamente	
 
