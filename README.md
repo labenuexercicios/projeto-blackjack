@@ -26,25 +26,25 @@ O enunciado completo está no Sistema de Estudante, na sessão de Projetos https
 ## Lista de requisitos
 
 
-- [ ] O usuário deve encontrar uma mensagem de boas vindas no console ao abrir o programa
+- [ x] O usuário deve encontrar uma mensagem de boas vindas no console ao abrir o programa
 	
-- [ ] O usuário deve ser questionado se deseja iniciar uma nova rodada	
+- [ x] O usuário deve ser questionado se deseja iniciar uma nova rodada	
 
-- [ ] Se o usuário recusar iniciar uma nova rodada, o programa deve imprimir uma mensagem informando o fim do jogo	
+- [ x] Se o usuário recusar iniciar uma nova rodada, o programa deve imprimir uma mensagem informando o fim do jogo	
 
-- [ ] Se o usuário aceitar iniciar uma nova rodada, o programa deve exibir as cartas do jogador e do computador
+- [x ] Se o usuário aceitar iniciar uma nova rodada, o programa deve exibir as cartas do jogador e do computador
 
-- [ ] Ao final do jogo, o programa deve imprimir o resultado informando quem ganhou	
+- [ x] Ao final do jogo, o programa deve imprimir o resultado informando quem ganhou	
 
-- [ ] Implementou a verificação para impedir um par de A na primeira mão	
+- [x ] Implementou a verificação para impedir um par de A na primeira mão	
 
 - [ ] O jogo esconde a uma das cartas do computador ao início da rodada	
 
-- [ ] O usuário é questionado se deseja comprar mais cartas	
+- [ x] O usuário é questionado se deseja comprar mais cartas	
 
-- [ ] Se o usuário somar mais de 21, o mesmo perde automaticamente	
+- [x ] Se o usuário somar mais de 21, o mesmo perde automaticamente	
 
-- [ ] Se o computador somar mais de 21, o mesmo perde automaticamente	
+- [x ] Se o computador somar mais de 21, o mesmo perde automaticamente	
 
 
 
