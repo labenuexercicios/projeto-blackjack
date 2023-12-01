@@ -11,10 +11,10 @@ const pontuacaoComputador= cartaComputador1.valor + cartaComputador2.valor
 console.log(`Usuário - cartas: ${carta1.texto} ${carta2.texto} - pontuação ${pontuacaoUsuario}`);
 console.log(`Computador - cartas: ${cartaComputador1.texto} ${cartaComputador2.texto} - pontuação ${pontuacaoComputador}`);
 
-if (pontuacaoUsuario > pontuacaoComputador){
+if (pontuacaoUsuario > pontuacaoComputador && pontuacaoUsuario <=21 || pontuacaoComputador > 21 && pontuacaoUsuario <=21){
   console.log("O usuário ganhou!")
 
-   } else if (pontuacaoComputador > pontuacaoUsuario) {
+   } else if (pontuacaoUsuario > pontuacaoComputador && pontuacaoUsuario <=21 || pontuacaoComputador > 21 && pontuacaoUsuario <=21) {
       console.log("O computador ganhou!")
       
       } else if (pontuacaoComputador === pontuacaoUsuario) {
@@ -23,6 +23,8 @@ if (pontuacaoUsuario > pontuacaoComputador){
          } else {
          
 }
+
+
    
 
 
