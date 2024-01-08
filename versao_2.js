@@ -11,7 +11,7 @@
  * 
  */
 
-
+//INICIO
 let inicio = confirm("Quer iniciar uma nova rodada?")
 if (inicio === true) {
    alert("Boas-vindas ao jogo de BlackJack")
