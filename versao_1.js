@@ -32,9 +32,9 @@ if (confirm("Quer iniciar um novo jogo?")) { // o que fazer se o usuário clicar
 
    console.log(`Computador - cartas: ${cartaUmComp.texto} ${cartaDoisComp.texto} - pontuação ${pontosComp}`);
 
-   if (+pontosJogador === +pontosComp) {
+   if (pontosJogador === pontosComp) {
       console.log("Deu empate");
-   } else if (+pontosJogador < +pontosComp) { 
+   } else if (pontosJogador < pontosComp) { 
       console.log("O computador ganhou"); 
    }else {console.log("O Jogador ganhou")}
 
