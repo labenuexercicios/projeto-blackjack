@@ -17,8 +17,8 @@ if (confirm("Quer iniciar um novo jogo?")) {
 
    MaoDoJogador.push(comprarCarta(), comprarCarta())
    MaoDoComputador.push(comprarCarta(), comprarCarta())
-   somaJogador = MaoDoJogador[0].valor+MaoDoJogador[1].valor
-   somaComputador = MaoDoComputador[0].valor+MaoDoComputador[1].valor;
+   somaJogador = MaoDoJogador[0].valor + MaoDoJogador[1].valor
+   somaComputador = MaoDoComputador[0].valor + MaoDoComputador[1].valor;
 
 
    while (MaoDoJogador[0].valor === 11 && MaoDoJogador[1].valor === 11 || MaoDoComputador[0].valor === 11 && MaoDoComputador[1].valor) {
@@ -30,47 +30,35 @@ if (confirm("Quer iniciar um novo jogo?")) {
       MaoDoJogador.push(comprarCarta(), comprarCarta())
       MaoDoComputador.push(comprarCarta(), comprarCarta())
       console.log("To dentro do while");
-      somaJogador = MaoDoJogador[0].valor+MaoDoJogador[1].valor
-      somaComputador = MaoDoComputador[0].valor+MaoDoComputador[1].valor;
+      somaJogador = MaoDoJogador[0].valor + MaoDoJogador[1].valor
+      somaComputador = MaoDoComputador[0].valor + MaoDoComputador[1].valor;
    }
 
    alert(`Suas cartas são ${MaoDoJogador[0].texto} e ${MaoDoJogador[1].texto} \n A carta do Computador é ${MaoDoComputador[0].texto}`)
 
-   while (confirm("Quer comprar mais uma carta?")) {
+   while (confirm(`Suas cartas são ${MaoDoJogador.join(',')} \n Deseja comprar mais uma carta?`) && somaJogador <= 21) {
+
 
       MaoDoJogador.push(comprarCarta())
+      somaJogador = 0
 
-      
-      // alert(`Suas cartas são ${MaoDoJogador[0].texto} e ${MaoDoJogador[1].texto} \n A carta do Computador é ${MaoDoComputador[0].texto}`)
 
-      alert(" Agora você tem as cartas: To no segundo while");
+      for (let i = 0; i < MaoDoJogador.length; i++) {
+
+         somaJogador = somaJogador + MaoDoJogador[i].valor;
+         console.log(MaoDoJogador[i].valor);
       }
+   }
+
+   if (somaJogador > 21) {
+      console.log("Deu mais que 21. Você perdeu");
+
+   }
 
 
-
-
-
-
-   console.log(MaoDoJogador, MaoDoComputador);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-} else {
+}
+else {
    alert("AHHHHH que peninha")
-
 }
 
 
