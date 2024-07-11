@@ -12,13 +12,15 @@ if (confirm("Quer iniciar um novo jogo?")) {
 
    let MaoDoJogador = []
    let MaoDoComputador = []
+   let ConcatenaCartasJogador = ""
+   let ConcatenaCartasComputador = ""
    let somaJogador = 0
    let somaComputador = 0
 
    MaoDoJogador.push(comprarCarta(), comprarCarta())
    MaoDoComputador.push(comprarCarta(), comprarCarta())
-   somaJogador = MaoDoJogador[0].valor + MaoDoJogador[1].valor
-   somaComputador = MaoDoComputador[0].valor + MaoDoComputador[1].valor;
+   // somaJogador = MaoDoJogador[0].valor + MaoDoJogador[1].valor
+   // somaComputador = MaoDoComputador[0].valor + MaoDoComputador[1].valor;
 
 
    while (MaoDoJogador[0].valor === 11 && MaoDoJogador[1].valor === 11 || MaoDoComputador[0].valor === 11 && MaoDoComputador[1].valor) {
@@ -29,32 +31,45 @@ if (confirm("Quer iniciar um novo jogo?")) {
       somaComputador = 0
       MaoDoJogador.push(comprarCarta(), comprarCarta())
       MaoDoComputador.push(comprarCarta(), comprarCarta())
-      console.log("To dentro do while");
+      console.log("To dentro do primeiro while");
       somaJogador = MaoDoJogador[0].valor + MaoDoJogador[1].valor
       somaComputador = MaoDoComputador[0].valor + MaoDoComputador[1].valor;
    }
 
-   alert(`Suas cartas são ${MaoDoJogador[0].texto} e ${MaoDoJogador[1].texto} \n A carta do Computador é ${MaoDoComputador[0].texto}`)
+ for (let i = 0; i < MaoDoJogador.length; i++) {
 
-   while (confirm(`Suas cartas são ${MaoDoJogador.join(',')} \n Deseja comprar mais uma carta?`) && somaJogador <= 21) {
+      somaJogador = somaJogador + MaoDoJogador[i].valor;
+      console.log(MaoDoJogador[i].valor);
 
+      ConcatenaCartasJogador += MaoDoJogador[i].texto + " "
+
+   }
+console.log(ConcatenaCartasJogador);
+
+   while (confirm(`Suas cartas são ${ ConcatenaCartasJogador}\n A carta do Computador é ${MaoDoComputador[0].texto}. \n Quer comprar mais uma carta?`) && somaJogador <= 21) {
 
       MaoDoJogador.push(comprarCarta())
       somaJogador = 0
+      ConcatenaCartasJogador = ""
 
-
-      for (let i = 0; i < MaoDoJogador.length; i++) {
+      for (let i = 0; i < MaoDoJogador.length; i++) { //Essa estrutura for é igual a de cima. Dá para transformar em função. 
 
          somaJogador = somaJogador + MaoDoJogador[i].valor;
          console.log(MaoDoJogador[i].valor);
+   
+         ConcatenaCartasJogador += MaoDoJogador[i].texto + " "
+   
       }
+
    }
 
+   console.log(MaoDoJogador);
+   console.log(ConcatenaCartasJogador);
+   console.log(somaJogador);
    if (somaJogador > 21) {
       console.log("Deu mais que 21. Você perdeu");
 
    }
-
 
 }
 else {
